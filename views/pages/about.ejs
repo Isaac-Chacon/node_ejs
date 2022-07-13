@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- Inclui o html que está no arquivo head.ejs -->
+  <%- include('../partials/head'); %>
+  <body class="container">
+    <!-- Inclui o html que está no arquivo header.ejs-->
+    <!-- Inclui um objeto com o valor "Sobre" no visualizador de seção para facilitar a navegação entre estas seções-->
+    <%- include('../partials/header', {pagina: "Sobre"}); %>
+    <main>
+      <div class="jumbotron">
+        <h1>Sobre Mim</h1>
+        <p>
+          Seja bem-vindo(a) à minha primeira aplicação com EJS, me chamo Isaac
+          Chacon, atualmente tenho 18 anos e sou graduando em Engenharia
+          Elétrica pela UFC (Universidade Federal do Ceará)
+        </p>
+      </div>
+    </main>
+    <!-- Inclui o html que está no arquivo footer.ejs -->
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
